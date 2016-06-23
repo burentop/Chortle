@@ -2,12 +2,13 @@
 public class StringDemo2 {
 	public static void main (String[] main) {
 		String str;
-	    int    len;
+	    String trimStr;
 
-	    str = new String( "   Elementary,\t     my dear Watson!!!   " );
+	    str = new String( "   Elementary,     my dear Watson!!!   " );
+	    trimStr = str.trim();
 
-	    len = str.length();
+	    System.out.println(str);
 
-	    System.out.println("The length is: " + len );
+	    System.out.println(trimStr);
 	}
 }
